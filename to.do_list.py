@@ -29,7 +29,7 @@ while True:
     print("3. Mark as complete")
     print("4. Exit")
 
-    choice = input("Enter your choice(1/2/3/4): ")
+    choice = input("Enter your choice(1/2/3/4):: ")
 
     if choice == "1":
         task = input("Enter the task: ")
