@@ -1,0 +1,3 @@
+learnt about type hints
+learnt about special codes that can be used in python to add colour to terminal output
+learnt about how to use csv files and integrate them into other apps
