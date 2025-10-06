@@ -46,7 +46,12 @@ def get_usr_expense():
             print('Invalind category. Please try again!')
 
 
-def save_expense_to_file():
+def save_expense_to_file(expense: Expense, expense_file_path):
+    #used a type hint here (": Expense")
+    print(f'🎯 Saving User Expense: {expense} to {expense_file_path}')
+    with open(expense_file_path, "a", encoding="utf-8") as f:
+        #so that python can save the file in UTF-8 encoding which supports emojis and all unicode characters
+        f.write(f"{expense.name}, {expense.amount}, {expense.category}\n")
    
 
 def summarize_expenses():
